@@ -1,0 +1,226 @@
+send sms:
+
+to send sms we have only 4 lines:
+
+projects link:
+
+sanketjhas
+
+http://codeproject.com/
+http://codelightstudios.github.io/Android-Smart-Login/
+
+send sms via intent
+
+intent intent= new intent(getApplicationContect(),MainActivity.class);
+pendingintent pl = pendingIntent.getActivityContext(),0,intent,0);
+
+//get the sms manager instance and call the send text message
+
+SmsManager sms= SmsManager.getDefault();
+sms.sendTextMessage("9566911041",null,"hello java",pi,null);
+
+
+->andorid QR code :
+
+Mobile vision API->google play services
+
+activity_main.xml
+activity_scanned_barcode.xml
+activity_email.xml
+build.gradle
+MainActivity.java
+ScannedBarCodeActivity.java
+EmailActivity.java
+
+
+android checkbox:
+
+checked and unchecked button
+
+ischecked()- returns true others wise false
+setchecked()- change the state of the checkbox
+
+
+start:
+
+paean
+
+application
+
+ide
+sdk
+jdk
+AVD
+
+
+activity_main.xml  - > text view
+main activity -> MainActivity
+AndroidManifest.xml->fundamental character of the app
+activity_main.xml->defines layout for the activity UI
+
+Topics:
+
+components of android:
+
+
+activity   - ac
+fragmentss
+intents
+life cycle - 
+shared regerence - database
+
+package name:
+com.package.set.domain
+
+activity name - 
+layout name - UI layout components
+
+project view -> android 
+
+java file 
+res file
+
+res fil:
+while have design
+
+drawable
+layout
+values
+
+-> values.xml:
+colors
+strings
+styles
+
+gradle:
+
+groove 
+MainActivity:
+oncreate 
+
+
+xml file:
+
+
+material design:
+
+LinearLayout
+ActivityLayout
+
+login page:
+
+first page: -> HomePageActivity
+AndroidMainfest.xml
+
+R.java -> contains all the information 
+
+intent ->
+
+Intent intent = new Intent( packageContext.this , HomePage
+startActivity(intent);
+}
+});
+
+
+android life cycle:
+
+oncreate
+onstart
+onresume
+onstop
+ondestroy
+
+intent:
+
+internally pass the data from one end to other end
+
+intent.putExtra(name:"login",value:"hello guys");
+startActivity(intents);
+
+Bundle extras = getIndent().getExtras();
+String param = (String)extras.get("param");
+
+MainActivity 
+
+oncrate (Bundle savedInstancestate){
+super.onCreate(savedInstance)
+{
+
+sharedPeference data = getSharedPererence( name="globalKey", MODE_PRIVATE);
+String username = data.getString( key : "username",delValue = null);
+String password = data.getString( key : "password",delValue = null);
+
+txtMsg = (TextView)findViewById(R.id.txtMsg);
+txtMsg.setText( Username + " " + Password);
+}
+
+-> life cycle:
+
+activity lanunched
+
+oncreate - intilize all the widgets
+onstart - call and not proceed
+onresume - 
+
+step1 ->activity running
+
+onpause - 
+onstop - 
+ondestory - 
+
+step2 ->activity shutdown
+
+home page:
+
+oncreate ,onstart , onresume
+
+second screen 
+
+2->1 page:
+
+oncreate 
+onstart
+onresume
+
+
+example:
+
+create custome browser:
+home create button
+
+
+intent:
+two types:
+implicit intent
+explicit intent
+
+volley : is the data to acces through the backend throught API
+
+Bundle:
+
+
+->access internation:
+
+permission to send sms:
+
+  <uses-permission android:name="android.permission.SEND_SMS"/>
+
+permission to phone call:
+
+<uses-permission android:name="android.permission.CALL_PHONE" />
+
+
+---> Handler:
+
+->Thread: 
+
+class MyThread extends Thread{
+public void run(){
+for(int i=0;i<101;i++0){
+try[
+this.wait( millis : 2000);
+}
+catch(Exception e){
+s.o.p(e);
+}
+ 
